@@ -1,0 +1,18 @@
+﻿using System;  
+  public class Fibonacci 
+   {  
+     public static void Main(string[] args)  
+      {  
+         int n1=0,n2=1,n3,i,zahl;    
+         Console.Write("Gib die Anzahl Elemente ein, die du Ausgegebenhaben willst: ");    
+         zahl = int.Parse(Console.ReadLine());  
+         Console.Write(n1+" "+n2+" "); //Ausgabe von 0 und 1    
+         for(i=2;i<zahl;++i) //Schleife startet bei 2, weil 0 und 1 bereits ausgegeben wurde   
+         {    
+          n3=n1+n2;    
+          Console.Write(n3+" ");    
+          n1=n2;    
+          n2=n3;    
+         }    
+      }  
+   }  
